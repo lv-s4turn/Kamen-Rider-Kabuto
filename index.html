@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kamen Rider Kabuto — Jalan Langit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#hero">KABUTO</a>
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#bentuk">Bentuk</a>
+    <a href="#rider">Para Rider</a>
+    <a href="#fakta">Fakta</a>
+  </nav>
+</header>
+
+<main>
+  <section id="hero" class="hero">
+    <div class="streaks" aria-hidden="true"></div>
+    <div class="horn" aria-hidden="true"></div>
+    <div class="hero-text">
+      <p class="sub">Kamen Rider Kabuto</p>
+      <h1>Menapaki jalan langit.</h1>
+      <p class="lead">Serangga bertanduk, armor baja, dan kecepatan yang membuat waktu terasa berhenti. Situs penggemar sederhana tentang Kamen Rider Kabuto.</p>
+      <button id="clockUp" class="btn" aria-pressed="false">Clock Up</button>
+      <p id="clockState" class="state" aria-live="polite">Waktu berjalan normal.</p>
+    </div>
+  </section>
+
+  <section id="tentang" class="block">
+    <h2>Tentang serial</h2>
+    <div class="cols">
+      <p>Kamen Rider Kabuto adalah serial tokusatsu produksi Toei yang tayang di Jepang dari Januari 2006 hingga Januari 2007. Serial ini menjadi bagian dari Kamen Rider Series era Heisei.</p>
+      <p>Meteorit membawa Worm, makhluk peniru manusia, ke Bumi. Organisasi rahasia ZECT melawan mereka dengan Masked Rider System. Souji Tendou, tokoh utama yang percaya diri, memakai Kabuto Zecter dan menjadi Kamen Rider Kabuto.</p>
+    </div>
+  </section>
+
+  <section id="bentuk" class="block alt">
+    <h2>Bentuk Kabuto</h2>
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-form="masked">Masked Form</button>
+      <button role="tab" aria-selected="false" data-form="rider">Rider Form</button>
+      <button role="tab" aria-selected="false" data-form="hyper">Hyper Form</button>
+    </div>
+    <div class="panel" id="formPanel" role="tabpanel">
+      <div class="swatch" id="formSwatch" aria-hidden="true"></div>
+      <div>
+        <h3 id="formTitle"></h3>
+        <p id="formDesc"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="rider" class="block">
+    <h2>Para Rider</h2>
+    <p class="note">Klik kartu untuk melihat serangga yang menjadi dasar Zecter-nya.</p>
+    <div class="grid" id="riders"></div>
+  </section>
+
+  <section id="fakta" class="block alt">
+    <h2>Fakta singkat</h2>
+    <dl class="facts">
+      <div><dt>Produksi</dt><dd>Toei</dd></div>
+      <div><dt>Tayang</dt><dd>29 Jan 2006 – 21 Jan 2007</dd></div>
+      <div><dt>Episode</dt><dd>51</dd></div>
+      <div><dt>Tokoh utama</dt><dd>Souji Tendou</dd></div>
+      <div><dt>Jurus khas</dt><dd>Rider Kick</dd></div>
+      <div><dt>Kemampuan</dt><dd>Cast Off dan Clock Up</dd></div>
+    </dl>
+  </section>
+</main>
+
+<footer>
+  <p>Situs penggemar tidak resmi. Kamen Rider Kabuto adalah hak cipta Toei dan Ishimori Productions.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
